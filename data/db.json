@@ -1,0 +1,36 @@
+{
+  "produits": [
+    {
+      "id": "8",
+      "code": "y9",
+      "designation": "tablette",
+      "prix": "4000"
+    },
+    {
+      "designation": "pc",
+      "id": "12",
+      "code": "x12",
+      "prix": "1200"
+    },
+    {
+      "id": "Yf_zkQz",
+      "code": "y9",
+      "designation": "pc",
+      "prix": 5000,
+      "couleur": "red"
+    },
+    {
+      "id": "P5KwJP8",
+      "code": "x12",
+      "designation": "pc",
+      "prix": "6000"
+    },
+    {
+      "id": "X-1kDtu",
+      "code": "y5",
+      "designation": "table en bois",
+      "prix": 8000,
+      "couleur": "red"
+    }
+  ]
+}

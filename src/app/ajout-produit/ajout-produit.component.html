@@ -1,0 +1,48 @@
+<h1> Fiche Produit </h1>
+<form (ngSubmit)="validerFormulaire()" #produitForm="ngForm">
+  <table>
+    <tr>
+      <td>
+        <div class="form-group">
+          <label for="code">Code:</label>
+          <input type="text" class="form-control" id="code" name="code" [(ngModel)]="nouveauProduit.code" required>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="form-group">
+          <label for="designation">Désignation:</label>
+          <input type="text" class="form-control" id="designation" name="designation" [(ngModel)]="nouveauProduit.designation" required>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="form-group">
+          <label for="prix">Prix:</label>
+          <input type="number" class="form-control" id="prix" name="prix" [(ngModel)]="nouveauProduit.prix" required>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="form-group">
+          <label for="categorie">Catégorie:</label>
+          <select class="form-control" id="categorie" name="categorie" [(ngModel)]="nouveauProduit.categorie" required>
+            <option *ngFor="let cat of categories" [ngValue]="cat">{{ cat.libelle }}</option>
+          </select>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="form-group">
+          <label for="couleur">Couleur:</label>
+          <input type="text" class="form-control" id="couleur" name="couleur" [(ngModel)]="nouveauProduit.couleur" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+      </td>
+    </tr>
+  </table>
+</form>

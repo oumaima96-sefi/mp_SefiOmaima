@@ -1,0 +1,25 @@
+<div class="container">
+  <nav>
+    <table>
+      <tr>
+        <td *ngFor="let action of actions">
+          <button
+            class="btn btn-success"
+            (click)="setActionCourante(action)"
+            [style.backgroundColor]="action == actionCourante ? 'yellow' : 'green'"
+            routerLink="{{ action.route }}"
+          >
+            <span *ngIf="action.icon === 'list'">&#9776;</span> <!-- List Icon -->
+            <span *ngIf="action.icon === 'home'">&#127968;</span> <!-- Home Icon -->
+            <span *ngIf="action.icon === 'plus'">&#43;</span> <!-- Plus Icon -->
+            {{ action.titre }}
+          </button>
+        </td>
+      </tr>
+    </table>
+  </nav>
+</div>
+<router-outlet></router-outlet>
+
+  <router-outlet>
+  </router-outlet>
